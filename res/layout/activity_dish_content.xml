@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DishContentActivity" >
+
+    <RelativeLayout
+                android:id="@+id/rl_dish_content_title_bar"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal" >
+                
+                <ImageButton 
+                    android:id="@+id/ib_share_qq"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/btn_qq_share"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    />
+                
+                <ImageButton 
+                    android:id="@+id/ib_share_weixin"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/btn_weixin_share"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_toLeftOf="@+id/ib_share_qq"
+                    android:layout_marginRight="15dp"
+                    />
+                
+            </RelativeLayout>
+    
+    <ScrollView
+        android:layout_below="@+id/rl_dish_content_title_bar"
+        android:id="@+id/sv_dish_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_dish_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            
+
+            <ImageView
+                android:id="@+id/iv_dish_coontent"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                 />
+
+            <TextView
+                android:id="@+id/tv_dish_content_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="红烧肉"
+                android:layout_gravity="center_horizontal"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/tv_dish_content_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="家常菜"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#808080" />
+
+            <TextView
+                android:id="@+id/tv_dish_content_imtro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="    菜谱来自电视节目：中华美食频道的《千味坊》 JIMMY老师教的菜，都是一些简单又美味的家常菜，这几天每天中午12点都会收看他的节目。 JIMMY老师教大家怎么看鱼是否新鲜,如果蒸出来后鱼的眼珠是鼓出来的就是新鲜 的.相反眼珠藏在里面就代表不新鲜了." />
+
+            <TextView
+                android:id="@+id/tv_dish_content_materials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                 android:layout_gravity="center_horizontal"
+                android:text="用料"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/tv_dish_content_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="五花肉" />
+
+            <TextView
+                android:id="@+id/tv_dish_content_burden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="葱，葱，蒜" />
+
+            <TextView
+                android:id="@+id/tv_dish_content_behavior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                 android:layout_gravity="center_horizontal"
+                android:text="做法"
+                android:textSize="28sp" />
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            
+            <ListView 
+                android:id="@+id/lv_dish_content_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                >
+            </ListView>
+            
+            </LinearLayout>
+           
+            <RelativeLayout 
+                android:layout_marginTop="60dp"
+                android:id="@+id/rl_dish_content_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            
+                <Button 
+                    android:id="@+id/btn_add_to_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收藏"
+                    android:background="@drawable/xiangqing_button"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    />
+                
+                <Button 
+                    android:id="@+id/btn_add_to_basket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="菜篮子"
+                    android:background="@drawable/xiangqing_button"
+                    android:layout_alignParentRight="true"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    /> 
+                
+            </RelativeLayout>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+
+    
+    
+</RelativeLayout>

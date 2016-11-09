@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+    <ImageView 
+        android:id="@+id/iv_dish"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_launcher"/>
+    
+    <TextView 
+        android:id="@+id/tv_dish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_dish"
+        android:text="红烧肉"
+        android:singleLine="true"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_dish_ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dish_name"
+        android:layout_toRightOf="@+id/iv_dish"
+        android:text="肉，酱油"
+        android:layout_alignLeft="@+id/tv_dish_name"
+        android:layout_marginTop="5dp"
+        android:textColor="#808080"
+        android:ems="10"
+        android:layout_alignBottom="@+id/iv_dish"
+        />
+   
+    <TextView 
+        android:id="@+id/tv_blank"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/iv_dish"
+        />
+
+</RelativeLayout>

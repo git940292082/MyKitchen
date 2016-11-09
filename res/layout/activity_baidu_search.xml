@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:focusable="true"   
+		android:focusableInTouchMode="true"
+        android:id="@+id/plugin_camera_image_folder_headview"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="3dp"
+        android:background="#2B4058"
+        android:gravity="center_horizontal"
+         >
+
+        <TextView
+            android:id="@+id/chat_publish_complete_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="取消"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_search_content"
+            android:layout_width="0dp"
+            android:layout_weight="22"
+            android:layout_height="wrap_content"
+            android:hint="输入搜索的内容"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/chat_publish_complete_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/chat_publish_bg"
+            android:text="完成"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/request"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_loc" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_location_nearby"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <TextView 
+        android:id="@+id/tv_shopping_cart_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="我的购物车"
+        android:background="#66ccff"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:gravity="center"
+         />
+
+    <ExpandableListView 
+        android:id="@+id/lv_shopping_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_shopping_cart_title_bar"
+        android:layout_above="@+id/rl_shopping_cart_buttons">
+        
+    </ExpandableListView>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_shopping_cart_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        >
+        
+        <Button 
+            android:id="@+id/btn_shopping_cart_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/btn_delete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+        
+         <CheckBox 
+            android:id="@+id/cb_shopping_cart_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_shopping_cart_delete"
+            android:layout_marginRight="20dp"
+            />
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

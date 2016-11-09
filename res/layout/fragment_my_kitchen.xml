@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+    
+
+     <LinearLayout 
+        android:id="@+id/rl_my_kitchen_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        
+        <ImageButton 
+            android:id="@+id/ib_index_my_kitchen_add_menu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/selector_buttton_add_menu"
+            android:background="@null"
+            android:padding="5dp"
+            />
+        
+        <EditText
+            android:id="@+id/et_index_my_kitchen_search"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:hint="输入你想要搜索的菜谱"
+            />
+        
+        <ImageButton 
+            android:scaleType="fitStart"
+            android:id="@+id/ib_index_my_kitchen_add_dish"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@drawable/selector_button_my_kitchen_search"
+            android:background="@null"
+            android:padding="5dp"
+           />
+        
+       
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_my_kitchen_label"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/rl_my_kitchen_title_bar"
+        android:layout_marginTop="20dp">
+        
+        <Button 
+            android:id="@+id/ib_my_kitchen_label_question"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="厨房的事"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/selector_button_label_question"
+            />
+        
+        <Button 
+            android:id="@+id/ib_my_kitchen_label_menu_sort"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="菜谱分类"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/selector_button_label_menu_sort"
+            />
+        
+        <Button 
+            android:id="@+id/ib_my_kitchen_label_leader_board"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="排行榜"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/selector_button_label_leaderboard"
+            />
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tv_my_kitchen_date"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text=""/>
+    
+   
+    <android.support.v4.view.ViewPager 
+        android:id="@+id/vp_my_kitchen_gallery"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_my_kitchen_label"
+        android:layout_above="@+id/tv_my_kitchen_date"
+        />
+    
+</RelativeLayout>

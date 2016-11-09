@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyCollectionActivity" >
+    
+    <TextView
+        android:id="@+id/tv_my_collection_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#66ccff"
+        android:gravity="center"
+        android:text="我的收藏"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+    
+    <sc.my.kitchen.ui.ListViewCompat 
+        android:id="@+id/lv_my_collection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_my_collection_title_bar"
+        android:layout_marginTop="10dp"
+        >
+        
+    </sc.my.kitchen.ui.ListViewCompat>
+    
+     <TextView 
+        android:id="@+id/tv_empty_collection"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="28sp"
+        android:text="当前收藏的菜谱哟"
+        android:layout_below="@+id/tv_my_collection_title_bar"
+        android:clickable="false"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

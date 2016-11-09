@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+         >
+
+        <LinearLayout
+            android:id="@+id/ll_first_line1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ib_other_dishes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_cuisine_dishes"
+                android:text="其他菜品"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_crowd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_dishes"
+                android:text="人群"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_disease"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_ingredients"
+                android:text="疾病"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_meat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_ingredients"
+                android:text="畜肉类"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_poultry_and_eggs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_ingredients"
+                android:text="禽蛋类"
+                android:textSize="12sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_below="@+id/ll_first_line1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ib_fisheries"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_cuisine_dishes"
+                android:text="水产类"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_vegetables"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_dishes"
+                android:text="蔬菜类"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_fruits"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_ingredients"
+                android:text="水果类"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_rice_soymilk_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_ingredients"
+                android:text="米面豆乳类"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_daily"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_ingredients"
+                android:text="日常"
+                android:textSize="12sp" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

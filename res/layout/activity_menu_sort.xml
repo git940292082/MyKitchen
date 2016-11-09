@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuSortActivity" >
+
+    <TextView
+        android:id="@+id/tv_menu_sort_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#66278523"
+        android:gravity="center"
+        android:text="菜谱分类"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_menu_sort"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/tv_menu_sort_title_bar" />
+    
+    <RadioGroup
+        android:id="@+id/rg_menu_sort_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vp_menu_sort"
+        android:orientation="horizontal" 
+        android:gravity="center">
+        
+
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/rb_first_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_radio_menu_sort_tab" />
+
+        <RadioButton
+            android:id="@+id/rb_second_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_radio_menu_sort_tab" />
+        
+         <RadioButton
+              android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/rb_third_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_radio_menu_sort_tab" />
+        
+    </RadioGroup>
+    
+    <ListView 
+        android:id="@+id/lv_menu_sort"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rg_menu_sort_tab">
+        
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemindActivity" >
+
+    <TextView
+        android:id="@+id/tv_remind_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#66278523"
+        android:gravity="center"
+        android:text="我的提醒"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+    
+    <ImageButton 
+        android:id="@+id/btn_add_remind"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:src="@drawable/selector_buttton_add_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+    
+    <ListView 
+        android:id="@+id/lv_remind_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_remind_title_bar"
+        android:layout_above="@+id/btn_add_remind"
+        >
+        
+    </ListView>
+        
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RadioGroup
+        android:id="@+id/rg_index_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_my_kitchen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@drawable/selector_radio_button_fragment"
+            android:text="我的厨房"
+            android:drawableTop="@drawable/selector_radio_button_my_kitchen"
+             />
+
+        <RadioButton
+            android:id="@+id/rb_my_food_basket"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@drawable/selector_radio_button_fragment"
+            android:textSize="14sp"
+            android:text="我的购物车"
+            android:drawableTop="@drawable/selector_radio_button_shopping_cart" />
+
+        <RadioButton
+            android:id="@+id/rb_my_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:textColor="@drawable/selector_radio_button_fragment"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="我"
+            android:drawableTop="@drawable/selector_radio_button_my_info" />
+       
+    </RadioGroup>
+    
+    <TextView
+        android:layout_marginBottom="8dp" 
+        android:id="@+id/main_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#696969"
+        android:layout_above="@+id/rg_index_tab"
+        />
+    
+    <sc.my.kitchen.ui.MyViewPager 
+        android:id="@+id/vp_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_divider"
+        android:layout_marginLeft="3dp"
+        />
+
+</RelativeLayout>

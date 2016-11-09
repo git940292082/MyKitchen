@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+         >
+
+        <LinearLayout
+            android:id="@+id/ll_first_line1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ib_festival"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_cuisine_dishes"
+                android:text="节日"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_feasts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_dishes"
+                android:text="节气"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_basic_process"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_ingredients"
+                android:text="基本工艺"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_other_art"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_ingredients"
+                android:text="其他工艺"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_basic_tastes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_ingredients"
+                android:text="基本口味"
+                android:textSize="12sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_below="@+id/ll_first_line1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ib_multiple_flavors"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_cuisine_dishes"
+                android:text="多元口味"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_fruity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_dishes"
+                android:text="水果味"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_seasoning"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/button_menu_sort_ingredients"
+                android:text="调味料"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_blank1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ib_blank1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textSize="12sp" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

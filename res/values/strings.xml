@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">我的厨房</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_menu_sort">MenuSortActivity</string>
+    <string name="title_activity_dish">DishActivity</string>
+    <string name="title_activity_dish_content">DishContentActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_my_collection">MyCollectionActivity</string>
+    <string name="title_activity_invitate">InvitateActivity</string>
+    <string name="title_activity_remind">RemindActivity</string>
+    <string name="title_activity_add_remind">AddRemindActivity</string>
+    <string name="title_activity_call">CallActivity</string>
+    <string name="title_activity_photo_helper">PhotoHelper</string>
+    <string name="title_activity_baidu_search">BaiduSearchActivity</string>
+    <string name="title_activity_bndemo_main">BNDemoMainActivity</string>
+    <string name="title_activity_baidu_navi">BaiduNaviActivity</string>
+
+</resources>

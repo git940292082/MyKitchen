@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRemindActivity" >
+
+    <EditText
+        android:id="@+id/et_remind_hour"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="1"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_remind_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_remind_hour"
+        android:layout_alignTop="@+id/et_remind_hour"
+        android:layout_toRightOf="@+id/et_remind_hour"
+        android:text="小时"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+         />
+    
+    <EditText
+        android:id="@+id/et_remind_minute"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tv_remind_hour"
+        android:ems="1"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+         >
+      </EditText>
+      
+    <TextView
+        android:id="@+id/tv_remind_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_remind_hour"
+        android:layout_alignTop="@+id/et_remind_hour"
+        android:layout_toRightOf="@+id/et_remind_minute"
+        android:text="分钟"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+         />
+
+    <Button 
+        android:id="@+id/btn_add_remind_ok"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="确定"
+        android:textSize="22sp"
+        android:background="@drawable/button"
+        android:layout_below="@+id/tv_remind_minute"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        />
+    
+</RelativeLayout>
